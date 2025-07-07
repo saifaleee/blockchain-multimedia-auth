@@ -5,5 +5,10 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest'
   },
+  globals: {
+    'ts-jest': {
+      tsconfig: 'backend/tsconfig.json'
+    }
+  },
   moduleFileExtensions: ['ts', 'js'],
 }; 
