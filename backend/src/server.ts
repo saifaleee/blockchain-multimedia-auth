@@ -6,6 +6,7 @@ import mediaRoutes from './routes/media';
 import editionRoutes from './routes/edition';
 import marketplaceRoutes from './routes/marketplace';
 import rentalRoutes from './routes/rental';
+import dashboardRoutes from './routes/dashboard';
 import { errorHandler } from './middleware/errorHandler';
 
 dotenv.config();
@@ -18,6 +19,7 @@ app.use('/media', mediaRoutes);
 app.use('/edition', editionRoutes);
 app.use('/marketplace', marketplaceRoutes);
 app.use('/rental', rentalRoutes);
+app.use('/dashboard', dashboardRoutes);
 
 // error handler
 app.use(errorHandler);
